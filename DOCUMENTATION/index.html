@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Documentation for AMovie HTML Theme</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
+
+	<link type="text/css" rel="stylesheet" href="styles/site.appic.css">
+	<link type="text/css" rel="stylesheet" href="styles/jquery.tocify.css">
+
+    <!-- Syntax Highlighter -->
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+<body>
+
+<div class="container-fluid">
+	<div class="navbar navbar-fixed-top ">
+		<div class="navbar-inner">
+			<a class="brand" href="index.html">Documentation for AMovie - Cinema/Movie HTML Template</a>
+		</div>
+	</div>
+	
+	<div class="row-fluid">
+		<!-- Generated siderav navigation -->
+		<div class="span3">
+			<div id="toc"></div>
+		</div>
+		
+		<!-- Main contnent for documention -->
+		<div class="span8">	
+			<div id="main">
+				<section>
+					<h2>General information</h2>
+
+					<p>Theme Version: 1.0.0</p>
+					<p>Created: 27 April 2014</p>
+					<p>Done by: Olia Gozha</p>
+					<p>Email: <a href="mailto:olia@gozha.net">olia@gozha.net</a></p>
+					<br>
+					<p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/olechka">here</a>. Thanks so much!</p>
+
+
+					<h2>Introduction and quick start guide.</h2>
+
+					<p>Thank you so much for purchasing this template called <strong>AMovie</strong>. This is <strong>Responsive</strong> <strong>HTML5</strong>/<strong>CSS3</strong> <strong>Retina Ready</strong> template. Please feel free to contact us if you have questions or problems about this template. No guarantee is provided, but we will do our best to provide you with the best possible assistance.</p>
+		
+					<h3> Quickstart guide.</h3>
+					<p> You can work with the template directly after unzipping it. We recommend rough order  of actions which would help you to customize it according to your needs.</p>
+
+					<ol>
+						<li> Unzip archive.</li>
+						<li> Choose page which you will use in project. Rest page you can remove from working directory.</li>
+                        <li> Change main menu code (accordingly to pages)
+                            <ol>
+                                <li> Delete menu item and nesting links "Feature". It contain page for crafting needs.</li>
+                                <li> Choose suitable variant for gallery presentation. Set href attribute for primary menu link "Gallery". Nesting dropdown menu you should remove.</li>
+                                <li> Choose suitable variant for news presentation. Set href attribute for primary menu link "News". Remove nesting dropdown menu. </li>
+                                <li> Remove unnecessary links in menu pattern.</li>
+                                <li> Remove from menu pattern link to page 404.</li>
+                                <li> Format order of menu elements relevantly to your needs.</li>
+                                <li> Copy  received code of main menu  on all pages of the template.</li>
+                            </ol> 
+                        </li>
+                        <li> Open files and replace content with the one you need.</li>
+                        <li> Customize plugins according to your needs. You can get more details in FAQs. </li>
+                        <li> Upload files on the server.</li>
+					</ol>
+
+					<p> Some pages (like single page, news page, single movie page etc.) have 3 variant for posible sidebar layout: left sidebar, right sidebar, without sidebar (or full width page). You can choose most suitable for yourself.</p>
+
+					<p> If you need to add additional elements pay your attention to section "Shortcode and patterns". It demonstrates ready patterns which you can quickly adjust to your ideas.</p>
+
+					<h2>Structure</h2>
+					<h3>HTML</h3>
+					<p>36 html pages.</p>
+					<ul>
+    					<li><em>index.html</em> - Index (homepage)</li>
+    					<li><em>typography.html</em> - Typography</li>
+    					<li><em>column.html</em> - Column</li>
+    					<li><em>page-elements.html</em> - Shortcode page</li>
+    					<li><em>icon-font.html</em> - Icons</li>
+    					<li>Gallery
+    						<ul>
+    							<li><em>gallery-four.html</em> - (4 columns)</li>
+    							<li><em>gallery-three.html</em> - (3 columns)</li>
+    							<li><em>gallery-two.html</em> - (2 columns)</li>
+    						</ul>
+    					</li>
+    					<li>News 
+    						<ul>
+    							<li><em>news-left.html</em> - News page (right sidebar)</li>
+    							<li><em>news-right.html</em> - News page (left sidebar)</li>
+    							<li><em>news-full.html</em> - News page (without sidebar)</li>
+    						</ul>
+    					</li>
+    					<li>Single post
+    						<ul>
+    							<li><em>single-page-left.html</em> - Single post (right sidebar)</li>
+    							<li><em>single-page-right.html</em> - Single post (left sidebar)</li>
+    							<li><em>single-page-full.html</em> - Single post (without sidebar)</li>
+    						</ul>
+    					</li>
+    					<li>Single movie page
+    						<ul>
+    							<li><em>movie-page-left.html</em> - Single movie page (right sidebar)</li>
+    							<li><em>movie-page-right.html</em> - Single movie page (left sidebar)</li>
+    							<li><em>movie-page-full.html</em> - Single movie page (without sidebar)</li>
+    						</ul>
+    					</li>
+    					<li>Movie list page
+    						<ul>
+    							<li><em>movie-list-left.html.html</em> - Movie list page (right sidebar)</li>
+    							<li><em>movie-list-right.html.html</em> - Movie list page (left sidebar)</li>
+    							<li><em>movie-list-full.html.html</em> - Movie list page (without sidebar)</li>
+    						</ul>
+    					</li>
+    					<li><em>single-cinema.html</em> - Single cinema page</li>
+    					<li><em>cinema-list.html</em> - Cinema list page</li>
+    					<li><em>trailer.html</em> - Trailers page</li>
+    					<li>Rates
+    						<ul>
+    							<li><em>rates-left.html</em> - Rates page (right sidebar)</li>
+    							<li><em>rates-right.html</em> - Rates page (left sidebar)</li>
+    							<li><em>rates-full.html</em> - Rates page (without sidebar)</li>
+    						</ul>
+    					</li>
+    					<li><em>offers.html</em> - Offers page</li>
+    					<li><em>contact.html</em> - Contact us page</li>
+    					<li><em>404.html</em> - 404 error page</li>
+    					<li><em>coming-soon.html</em> - Coming-soon page</li>
+    					<li><em>login.html</em> - Login/Registration page</li>
+    					<li>
+    						<ul>
+    							<li><em>book1.html</em> - Booking step one page</li>
+    							<li><em>book2.html</em> - Booking step two page</li>
+    							<li><em>book3-buy.html</em> - Booking step three (buy) page</li>
+    							<li><em>book3-reserve.html</em> - Booking step three (reserve) page</li>
+    							<li><em>book-final.html</em> - Final ticket view</li>
+    						</ul>
+    					</li>
+    				</ul>
+
+    				
+
+    				<p>This template is based on a default <a href="http://getbootstrap.com/">bootstrap 3.1.1</a> grid system.
+                    <br>
+                    All information within the main content area is nested within a body tag. The general template structure is pretty the same throughout the template. Here is the general structure of main page (index.html).</p>
+
+                    <pre class="brush: html">
+                        <div class="wrapper">
+                            <!-- Header section -->
+                            <header class="header-wrapper header-wrapper--home">
+                                <div class="container">
+                                    <!-- Logo link-->
+                                    <a href='index.html' class="logo">
+                                        <img alt='logo' src="images/path/to/logo">
+                                    </a>
+
+                                    <!-- Main website navigation-->
+                                    <nav id="navigation-box">
+                                        ...
+                                    </nav>
+
+                                     <!-- Additional header buttons / Auth and direct link to booking-->
+                                    <div class="control-panel">
+                                        ...
+                                    </div>
+
+                                </div>
+                            </header>
+
+                            <!-- Slider -->
+                            <div class="bannercontainer">
+                                    <div class="banner">
+                                        ...
+                                    </div>
+                            </div>
+
+                            <!-- Main content -->
+                            <section class="container">
+                                <div class="movie-best">
+                                    ...
+                                </div>
+
+                                <div class="mega-select-present mega-select-top mega-select--full">
+                                    ...
+                                </div>
+
+                                <!-- Movie now playing -->
+                                <div class="">
+                                    ...
+                                </div>
+                                
+                                <!-- Social group (facebook and twitter)-->
+                                <div class="social-group">
+                                    ...
+                                </div>
+
+                                <aside class="col-sm-4 col-md-3">
+                                    <div class="sitebar first-banner--left">
+                                        ...
+                                    </div>
+                                </aside>
+                                
+                                <!-- Latest news -->
+                                <div class="col-sm-4 similar-wrap col--remove">
+                                    ...
+                                </div>
+
+                            </section>
+
+                            <footer class="footer-wrapper">
+                                <!-- Footer nav -->
+                                <div class="col-xs-4 col-md-2 footer-nav">
+                                    ...
+                                </div>
+                                <div class="col-xs-4 col-md-2 footer-nav">
+                                    ...
+                                </div>
+                                <div class="col-xs-4 col-md-2 footer-nav">
+                                    ...
+                                </div>
+
+                                <!-- Footer social-->
+                                 <div class="footer-info">
+                                    ...
+                                 </div>
+                            </footer>
+
+
+                        </div>
+                    </pre>
+
+					<h3>CSS</h3>
+                    7 CSS files have been used in this theme. 
+
+                    <pre>
+                        &lt;&#45;&#45; Stylesheets &#45;&#45;&gt;
+
+                        &lt;&#45;&#45; External css files &#45;&#45;&gt;
+                        &lt;&#45;&#45; Select &#45;&#45;&gt;
+                        &lt;link href&#61;&#34;css/external/jquery.selectbox.css&#34; rel&#61;&#34;stylesheet&#34; &#47;&gt;
+                        &lt;&#45;&#45; Swiper slider &#45;&#45;&gt;
+                        &lt;link href&#61;&#34;css/external/idangerous.swiper.css&#34; rel&#61;&#34;stylesheet&#34; &#47;&gt;
+                        &lt;&#45;&#45; Magnific-popup &#45;&#45;&gt;
+                        &lt;link href&#61;&#34;css/external/magnific-popup.css&#34; rel&#61;&#34;stylesheet&#34; &#47;&gt;
+                        &lt;&#45;&#45; REVOLUTION BANNER CSS SETTINGS &#45;&#45;&gt;
+                        &lt;link href&#61;&#34;rs-plugin/css/settings.css&#34; rel&#61;&#34;stylesheet&#34; type&#61;&#34;text/css&#34; media&#61;&#34;screen&#34; &#47;&gt;
+                        
+                        &lt;&#45;&#45; Custom css files &#45;&#45;&gt;
+                        &lt;&#45;&#45; Mobile menu &#45;&#45;&gt;
+                        &lt;link href&#61;&#34;css/gozha-nav.css&#34; rel&#61;&#34;stylesheet&#34; &#47;&gt;
+                        &lt;&#45;&#45; Touch &#45;&#45;&gt;
+                        &lt;link href&#61;&#34;css/touch.css?v=1&#34; rel&#61;&#34;stylesheet&#34; &#47;&gt;
+                        &lt;&#45;&#45; Style &#45;&#45;&gt;
+                        &lt;link href&#61;&#34;css/style.css?v=1&#34; rel&#61;&#34;stylesheet&#34; &#47;&gt;
+                    </pre>
+
+                    <br>
+                    <h5>gozha-nav.css</h5>
+
+                    <p>It contains styles for menu view. It has two formats of main menu view: a) full format (opened) menu – the menu that is used for large and medium displays (monitors, laptops, tablets (landscape orientation)); b) narrow format (compact) menu – styles used for small screens (phones, tablets (portrait orientation)). Transition point value is 768 pixels (is used as max-width condition for media query)</p>
+                    
+                    <br>
+                    <h5>touch.css</h5>
+
+                    <p>Rules for touchscreen devices. The main purpose of this file is to provide certain hacks for mobile devices and to cancel animation used for desktop version.</p>
+
+                    <br>
+                    <h5>style.css</h5>
+                    <p>Style.css is generated file of sets less files. It partly include bootstap 3.1.1 and all custom style rules. </p>
+
+                    <p>Less files structure:</p>
+
+                    <ul>
+                        <li>base group:
+                            <ul>
+                                <li>bootstrap-variables.less - collection of core bootstrap variables (<a href="http://getbootstrap.com/css/#less-variables">read more</a> );</li>
+                                <li>vars.less - collection of custom variables (colors and fonts mostly);</li>
+                                <li>normalize.less - a modern, HTML5-ready alternative to СSS resets;</li>
+                                <li>bootstrap-type.less - bootstap core types for heading and typography;</li>
+                                <li>bootstrap-scaffolding.less - a handful of variables for quickly customizing key elements of your site's skeleton;</li>
+                                <li>bootstrap-mixins.less - bootstap function for speed up coding process; (<a href="http://getbootstrap.com/css/#less-mixins-vendor">read more</a> )</li>
+                                <li>base.less - custom rules for unclassed element. some most general rules. font init place;</li>
+                            </ul>
+                        </li>
+                        <li>layout group:
+                            <ul>
+                                <li>bootstrap-grid.less - bootstap 12-col grid system;</li>
+                                <li>responsive-utilities.less - classes for toggling content visibility across viewport breakpoints;</li>
+                            </ul>
+                        </li>
+                        <li>object group:
+                            <ul>
+                                <li>alerts.less - default styles for bootstrap component - alert;</li>
+                                <li>buttons.less - default styles for bootstrap component - button;</li>
+                                <li>navbar.less - default styles for bootstrap component - tabs and accordions (partly);</li>
+                                <li>navs.less - default styles for bootstrap component - tabs and accordions (partly);</li>
+                                <li>panels.less - default styles for bootstrap component - tabs and accordions (partly);</li>
+                                <li>component-animations.less - respond for smoothing effect on animated components;</li>
+                                <li>objects.less -  main file which contains styles for all patterts;</li>
+                            </ul>
+                        </li>
+                        <li>state group:
+                            <ul>
+                                <li>state.less - contains rules for all patterns variations and responsive block.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    
+
+
+					<h3>JavaScript</h3>
+					<p>This theme imports 22 Javascript files.</p>
+
+                    <pre>
+                        &lt;&#45;&#45; Core js files &#45;&#45;&gt;
+                        &lt;&#45;&#45; jQuery 1.9.1 &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;script&gt;window.jQuery &#124;&#124; document.write&#40;&#8216;&lt;script src&#61;&#34;js/jquery-1.10.1.min.js&#34;&gt;&lt;&#92;&#47;script&gt;&#8217;&#41;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Migrate &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/jquery-migrate-1.2.1.min.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; jQuery UI &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;http://code.jquery.com/ui/1.10.4/jquery-ui.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Bootstrap 3 &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Modernizr &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/modernizr.custom.js&#34;&gt;&lt;&#47;script&gt;
+
+                        &lt;&#45;&#45; Slider &#45;&#45;&gt;
+                        &lt;&#45;&#45; jQuery REVOLUTION Slider &#45;&#45;&gt;
+                        &lt;script type&#61;&#34;text/javascript&#34; src&#61;&#34;rs-plugin/js/jquery.themepunch.plugins.min.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;script type&#61;&#34;text/javascript&#34; src&#61;&#34;jquery.themepunch.revolution.min.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Swiper slider &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/idangerous.swiper.min.js&#34;&gt;&lt;&#47;script&gt;
+
+                        &lt;&#45;&#45; Files (js) for improve interface &#45;&#45;&gt;
+                        &lt;&#45;&#45; Mobile menu &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/jquery.mobile.menu.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Select &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/jquery.selectbox-0.2.min.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Stars rate &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/jquery.raty.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Form element &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/form-element.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Form validation &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/form.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Twitter feed &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/twitterfeed.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Knob js &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/jquery.knob.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Count comimg soon &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/count.down.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Magnific-popup &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/jquery.magnific-popup.min.js&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Share buttons &#45;&#45;&gt;
+                        &lt;script type&#61;&#34;text/javascript&#34;&gt; var addthis_config &#61; &#123;&#34;data_track_addressbar&#34;&#58;true&#125;&#59;&lt;&#47;script&gt;
+                        &lt;script type&#61;&#34;text/javascript&#34; src&#61;&#34;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-525fd5e9061e7ef0&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; Inview &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/jquery.inview.js&#34;&gt;&lt;&#47;script&gt;
+                        
+                        &lt;&#45;&#45; Maps &#45;&#45;&gt;
+                        &lt;&#45;&#45; *** Google map  *** &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;https://maps.google.com/maps/api/js?sensor=true&#34;&gt;&lt;&#47;script&gt;
+                        &lt;&#45;&#45; *** Google map infobox  *** &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/external/infobox.js&#34;&gt;&lt;&#47;script&gt;
+
+                        &lt;&#45;&#45; Custom &#45;&#45;&gt;
+                        &lt;script src&#61;&#34;js/custom.js&#34;&gt;&lt;&#47;script&gt;
+                    </pre>
+
+                    <p>Lets take a look closely at our javascript files.</p>
+
+                    <br>
+                    <p><strong>Part of the scripts is basic scripts </strong>and is used in all template pages. This includes: </p>
+                    <h5>jquery-1.10.1.min.js</h5>
+                    <p><a href="http://jquery.com/">jQuery</a> is a multi-browser JavaScript library designed to simplify the client-side scripting of HTML.</p>
+
+                    <br>
+                    <h5>jquery-migrate-1.2.1.min.js</h5>
+                    <p>This plugin can be used to detect and restore APIs or features that have been deprecated in jQuery and removed as of version 1.9. The plugin can be included with versions of jQuery as old as 1.6.4 to identify potential upgrade issues via its JQMIGRATE console warnings. However, the plugin is only required for version 1.9.0 or higher to restore deprecated and removed functionality.</p>
+
+                    <br>
+                    <h5>jquery-ui.js</h5>
+                    <p><a href="http://jqueryui.com/">jQuery UI</a> is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. In this template it is used to make able functional kept in wijmo widgets.</p>
+                
+                    <br>
+                    <h5>modernizr.custom.js</h5>
+                    <p><a href="http://modernizr.com/">Modernizr</a> is a JavaScript library that detects HTML5 and CSS3 features in the user's browser.</p>
+                    
+                    <br>
+                    <h5>bootstrap.js</h5>
+                    <p>Powerful mobile-first front-end framework for web development. It connects to the site through CDN "http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css". You can get more information on official site  <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>.The project uses range of elements (accordions, tabs, tooltips etc.) which are based on use of this framework. You can find description of these elements <a href="http://getbootstrap.com/javascript/">here</a></p>
+
+
+                    <br>
+                    <p><strong>2 different sliders</strong> for realization main slider on home page. Besides, it uses many other functional sliders on inner pages (slider for images in single post page and sliders media photo and video elements). If slider settings do not suit your project you can switch on documentation of each of them and change corresponding pairs of options -value according to your needs.</p>
+
+                    <h5>jquery.themepunch.plugins.min.js and jquery.themepunch.revolution.min.js</h5>
+                    <p>Revolution slider. Responsive jQuery Plugin. Find documentation <a href="assets/slider_documentation/documentation/documentation.html">here</a>.</p>
+
+                    <br>
+                    <h5>idangerous.swiper.js</h5>
+                    <p>Swiper slider. Swiper - is ultra lightweight mobile touch slider with hardware accelerated transitions (where supported) and amazing native behavior. Find documentation <a href="http://www.idangero.us/sliders/swiper/api.php">here</a>.</p>
+
+                    
+                    <br>
+                    <p><strong>Some specific plugins </strong>have been also used. Part of them use on each template page. Another part in some pages for specific needs.</p>
+
+                    <h5>jquery.mobile.menu.js</h5>
+                    <p>Designer’s plugin for mobile menu. It has two patterns of interaction with main menu: a) full format (opened) menu – the menu that is used for large and medium displays (monitors, laptops, tablets (landscape orientation)). b) narrow format (compact) menu – the menu which is used for displaying in small screens (phones, tablets(portrait orientation)).For mobile view  initially menu looks like switch icon. After you open it every link is divided into two parts. Main part is a direct link to the menu item. Additional link (which is marked by plus icon in closed state and minus icon in open state) enables you to open context menu list. The menu is well adopted for touch devices since touchstart event is also performed.</p>
+
+                    <h5>jquery.form.js</h5>
+                    <p>The script presupposes 3 objectives. 1) Testing inputs placeholder availability and control of its corresponding display. 2) Checkup of input data in form inputs. If you face incompatibility (terms are not performed) shows error handler. 3) Data forming for sending message into php file. Using this data the message is crafted and then it will be sent. </p>
+
+                    <br>
+                    <h5>form-element.js</h5>
+                    <p>Plugin helps generate custom form element like checkbox and radio button.</p>
+
+                    <br>
+                    <h5>jquery.selectbox-0.2.min.js</h5>
+                    <p>Custom select box replacement inspired by jQuery UI source.</p>
+
+                    <br>
+                    <h5>jquery.raty.js</h5>
+                    <p>jQuery Raty is a plugin that generates a customizable star rating. More information about setting you can find <a href="http://wbotelhos.com/raty">here</a></p>
+
+                    <br>
+                    <h5>jquery.knob.js</h5>
+                    <p>Nice, downward compatible, touchable, jQuery dial. More information find <a href="http://anthonyterrien.com/knob/">here</a></p>
+
+                    <br>
+                    <h5>count.down.js</h5>
+                    <p>A simple JavaScript API for producing an accurate, intuitive description of the timespan between two Date instances. <a href="http://countdownjs.org/">Link</a></p>
+
+                    <br>
+                    <h5>jquery.magnific-popup.min.js</h5>
+                    <p>Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device. <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html">Plugin documentation</a> have full information about customization.</p>
+                    
+                    <br>
+                    <h5>addthis.js</h5>
+                    <p>AddThis - is a  mobile-friendly sharing, following and content recommendations.
+                    This template uses share button for the most popular social networks: twitter, facebook, google plus, pinterest and linked in. If you need another particular set you can easily generate it. Firstly you should go to  <a href="https://www.addthis.com/get/sharing">generating form</a>. Then choose social networks and generate code. After that you should replace original template code with the generated one. To generate share button you need to create an account on site <a href="https://www.addthis.com/get/sharing">www.addthis.com</a></p>
+
+                    <br>
+                    <h5>maps.google.com/maps/api/js</h5>
+                    <p>Script serves to add google map on template page. You can find step by step instruction of map insertion in <a href="https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map">here.</a></p>
+
+                    <br>
+                    <h5>infobox.js</h5>
+                    <p>InfoBox extends the Google Maps JavaScript API V3 OverlayView class.
+                    <br>An InfoBox behaves like a google.maps.InfoWindow, but it supports several additional properties for advanced styling. An InfoBox can also be used as a map label.
+                    <br>An InfoBox also fires the same events as a google.maps.InfoWindow.</p>
+
+                    <br>
+                    <h5>twitterfeed.js</h5>
+                    <p>Script that allows to download on website recent news from twitter account. You can find information on how to adjust it to your own account in FAQs.</p>
+
+                    <br>
+                    <h5>jquery.inview.js</h5>
+                    <p>Script that will be triggered when the element is scrolled in to the viewport. This project uses checkups for assignment for blocks of animation effects when they appear in displaying area. Plugin development is in open-source on github (<a href="https://github.com/protonet/jquery.inview">follow the link</a>).</p>
+
+                    <br>
+                    <h5>custom.js</h5>
+                    <p>Custom file which contains all plugins establish for relative elements of every page. The file contains set up used on every page and set up for each separate page as a function. You can call functions on every separate page on “script” tag on .html files.</p>
+                    
+
+                    <h3>PSD Files</h3>
+                    <p>Here is 22 psds with this theme:</p>
+                    
+                    <ul>
+                        <li>01_Homepage</li>
+                        <li>02_Homepage hovers</li>
+                        <li>03_Detailed movie page</li>
+                        <li>04_Book a ticket step 1</li>
+                        <li>05_Book a ticket step 2</li>
+                        <li>06_Book a ticket step 3</li>
+                        <li>07_Book a ticket step 3 for reservation</li>
+                        <li>08_Book a ticket final screen</li>
+                        <li>09_List of movies now playing</li>
+                        <li>10_List of cinemas</li>
+                        <li>11_Single cinema page</li>
+                        <li>12_Trailers</li>
+                        <li>13_Rates</li>
+                        <li>14_Best offers</li>
+                        <li>15_News</li>
+                        <li>16_Gallery</li>
+                        <li>17_Contact</li>
+                        <li>18_Single post</li>
+                        <li>19_Page elements</li>
+                        <li>20_404 error</li>
+                        <li>21_Under construction</li>
+                        <li>22_Sign in pop up</li>  
+                    </ul>
+
+                    <p>All psds are sliced and it's easy to reskin this template.</p>
+
+                    <h3>Fonts Used</h3>
+                    <p>The template uses four fonts. One of them (Font Awresome) is iconic fonts. It allows you to display icons in crossbrowsing and crossplatforming ways. Three text fonts are also attached - Roboto, Aleo and MuseoSans 500. The first one is generated through Google Fonts.  The second one is linked up through сss rule @font-face in document base.less (or it can be change in style.css). The third  one is linked up through сss rule @import in document base.less (or it can be change in style.css).</p>
+
+                    <pre class="brush: html">
+                        <!-- Font awesome - icon font -->
+                        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+                        <!-- Roboto -->
+                        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+                        And 
+
+                        // Aleo Font Family
+                        @import "http://webfonts.ru/import/aleo.css";
+
+                        // MuseoSans 500
+                        @font-face {
+                            font-family: 'museo_sans500';
+                            src: url('../fonts/MuseoSans_500-webfont.eot');
+                            src: url('../fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+                                 url('../fonts/MuseoSans_500-webfont.woff') format('woff'),
+                                 url('../fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+                                 url('../fonts/MuseoSans_500-webfont.svg#museo_sans500') format('svg');
+                            font-weight: normal;
+                            font-style: normal; 
+
+                        } 
+                    </pre>
+
+                    <h2>Shortcode and patterns</h2>
+                    <p>This template is based on scalable and modular principles. Most elements are build like code templates.You can put this templates in any place in page. It gives default pattern view. You can add additional class (class modificator) to pattern root tag. This will give different view.</p>
+
+                    <h4>Accordions</h4>
+                    <p>Code stucture for accordion. Accordion light theme. Class modificator "accordion-light".</p>
+
+                    <pre class="brush: html">
+                        <!-- Light accordion-->
+                            <!-- Accordion markup-->
+                                <div class="panel-group accordion-light" id="accordion">
+
+                                  <!-- Accordion item -->
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <p class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                                          <span class="marker">
+                                            <span class="custom1">+</span>
+                                            <span class="custom2">-</span>
+                                          </span>
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        </a>
+                                      </p>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque libero a ante viverra vel scelerisque orci tristique. Nullam nisl massa, ullamcorper id condimentum porta, cursus a lorem. 
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end accordion item -->
+                                
+                                  <!-- Accordion item -->
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <p class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                          <span class="marker">
+                                            <span class="custom1">+</span>
+                                            <span class="custom2">-</span>
+                                          </span>
+                                          Aenean sed neque rhoncus. 
+                                        </a>
+                                      </p>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse in">
+                                      <div class="panel-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque libero a ante viverra vel scelerisque orci tristique. Nullam nisl massa, ullamcorper id condimentum porta, cursus a lorem. 
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end accordion item -->
+                                
+                                  <!-- Accordion item -->
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <p class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+                                         <span class="marker">
+                                            <span class="custom1">+</span>
+                                            <span class="custom2">-</span>
+                                          </span>
+                                         Sed adipiscing vel felis et placerat.
+                                        </a>
+                                      </p>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque libero a ante viverra vel scelerisque orci tristique. Nullam nisl massa, ullamcorper id condimentum porta, cursus a lorem. 
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end accordion item -->
+
+                                  <!-- Accordion item -->
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <p class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">
+                                          <span class="marker">
+                                            <span class="custom1">+</span>
+                                            <span class="custom2">-</span>
+                                          </span>
+                                          Vivamus mi dolor, laoreet luctus nibh et, volutpat lacinia metus.
+                                        </a>
+                                      </p>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque libero a ante viverra vel scelerisque orci tristique. Nullam nisl massa, ullamcorper id condimentum porta, cursus a lorem. 
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end accordion item -->
+
+
+                                </div>
+                            <!-- end accordion -->
+
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/accordion-light.png">
+
+                    <p>Accordion dark theme. Class modificator "accordion-dark".</p>
+                    <p>Result:</p>
+                    <img alt="" src="img/accordion-dark.png">
+
+                    <h4>Tabs</h4>
+                    <p>Tabs code stucture. Tabs horisontal theme. Class modificator "tabs--horisontal".</p>
+
+                    <pre class="brush: html">
+                        <!-- Horisontal tabs -->
+                            <div class="tabs tabs--horisontal">
+                              <!-- Nav tabs -->
+                              <ul class="nav nav-tabs" id="hTab">
+                                <li class="active"><a href="#movie1" data-toggle="tab">Movies</a></li>
+                                <li><a href="#comment1" data-toggle="tab">Comments</a></li>
+                                <li><a href="#map1" data-toggle="tab">Map</a></li>
+                              </ul>
+
+                              <!-- Tab panes -->
+                              <div class="tab-content">
+                                <div class="tab-pane active" id="movie1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque libero a ante viverra vel scelerisque orci tristique. Nullam nisl massa, ullamcorper id condimentum porta, cursus a lorem. </p>
+
+                                <p>Sed ultrices vitae libero et sollicitudin. Etiam hendrerit sem ut ipsum malesuada, sit amet viverra quam lacinia. Nunc ut malesuada elit, et faucibus massa. Proin risus sem, pellentesque ac tincidunt in, gravida ac justo. </p>
+                                </div>
+                                <div class="tab-pane" id="comment1"><p>Sed ultrices vitae libero et sollicitudin. Etiam hendrerit sem ut ipsum malesuada, sit amet viverra quam lacinia. Nunc ut malesuada elit, et faucibus massa. Proin risus sem, pellentesque ac tincidunt in, gravida ac justo. </p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque libero a ante viverra vel scelerisque orci tristique. Nullam nisl massa, ullamcorper id condimentum porta, cursus a lorem. </p>
+                                </div>
+                                <div class="tab-pane" id="map1"><p>Nunc ut malesuada elit, et faucibus massa. Proin risus sem, pellentesque ac tincidunt in, gravida ac justo. Sed ultrices vitae libero et sollicitudin. Etiam hendrerit sem ut ipsum malesuada, sit amet viverra quam lacinia.</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque libero a ante viverra vel scelerisque orci tristique. Nullam nisl massa, ullamcorper id condimentum porta, cursus a lorem. </p>
+                                </div>
+                              </div>
+                        </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/tabs-horisontal.png">
+
+                    <p>Tabs vertical theme. Class modificator "tabs--vertical".</p>
+                    <p>Result:</p>
+                    <img alt="" src="img/tabs-vertical.png">
+
+                    <h4>Testimonial</h4>
+                    <p>Testimonial code stucture. Default theme.</p>
+
+                    <pre class="brush: html">
+                         <div class="testionaial">
+                          <div class="testionaial__images">
+                            <img alt='' src="images/path/to/image">
+                          </div>
+                          <p class="testionaial__author">Tamara Walsh</p>
+                          <p class="testionaial__organization">Themeforest, CEO</p>
+
+                          <div class="testionaial__text">“Fusce nec libero odio. Nam quis cursus nisi. Nam adipiscing dictum ante. Nam adipiscing dictum ante. Sed tincidunt libero sit amet ante molestie eu. Aliquam eu elit sit amet augue condimentum imperdiet non eget odio.”</div>
+                      </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/testimonial.png">
+
+                    <p>Testimonial code stucture. Testimonial with corner on image. Class modificator "testionaial--corner".</p>
+
+                    <pre class="brush: html">
+                        <div class="testionaial testionaial--corner">
+                          <div class="testionaial__images">
+                            <img alt='' src="images/path/to/image">
+                          </div>
+                          <p class="testionaial__author">Tamara Walsh</p>
+                          <p class="testionaial__organization">Themeforest, CEO</p>
+
+                          <div class="testionaial__text">Nam quis cursus nisi. Nam adipiscing dictum ante. Nam adipiscing dictum ante. Sed tincidunt libero sit amet ante molestie eu.</div>
+                      </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/testimonial-corner.png">
+
+                    <p>Testimonial code stucture. Testimonial with big rectangle shadow. Class modificator "testionaial--rect".</p>
+
+                    <pre class="brush: html">
+                        <div class="testionaial testionaial--rect">
+                        <div class="testimonial-inner">
+                          <div class="testionaial__text">Quisque condimentum ante at est aliquam rutrum. In egestas eu arcu non tincidunt. Vivamus pellentesque orci vel libero rutrum feugiat. In hac habitasse platea dictumst. Etiam tincidunt fermentum nibh, posuere consectetur nisi semper in. </div>
+                          <p class="testionaial__author">John Doe, Themeforest</p>
+                        </div>
+                    </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/testimonial-rect.png">
+
+                    <p>More patters you can find in page-element.html</p>
+                    <p>There are several patterns for presentation needs.</p>
+
+                    <h4>Post</h4>
+                    <p>Post code stucture. Full post view. Principal class "post".</p>
+
+                    <pre class="brush: html">
+                        <div class="post">
+                            <div class="post__preview">
+                                <div class="swiper-container">
+                                  <div class="swiper-wrapper">
+                                      <!--First Slide-->
+                                      <div class="swiper-slide" data-text='Mauris gravida ipsum vitae libero eget dignissim ipsum egestas.'> 
+                                         <img alt='' src="images/path/to/image">
+                                      </div>
+                                      
+                                      ...
+
+                                  </div><!-- end swiper wrapper-->
+                                </div><!-- end swiper container -->
+
+                                <a class="arrow-left no-hover" href="#"><span class="slider__info"></span></a> 
+                                <a class="arrow-right" href="#"><span class="slider__info"></span></a>
+                            
+                            </div>
+
+                            <h1>Donec eu mollis augue, ut egestas leo (h1)</h1>
+                            <p class="post__date">29 October 2013 </p>
+
+                            <div class="wave-devider"></div>
+
+                            <p>Mauris gravida ipsum vitae libero molestie eget dignissim ipsum egestas. Quisque in eros id velit molestie placerat a ut arcu. Etiam consequat, turpis ac commodo rhoncus, justo enim consequat tortor, vitae interdum odio tellus at sem. Aliquam lacus quam, lobortis sed lacus eget, commodo volutpat nunc. <a href="#" class="link--text">Text link sample</a>. Proin accumsan diam vel nulla ultrices congue.</p> 
+
+                            <p>More text and other elements in post</p>
+                        </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/post.png">
+                    <img alt="" src="img/post-more.png">
+
+                    <p>Post code stucture. Full post view. Principal class "post". Class modificator "post--news".</p>
+
+                    <pre class="brush: html">
+                        <article class="post post--news">
+                            <a href='single-page-left.html' class="post__image-link">
+                                <img alt='' src="images/path/to/image">
+                            </a>
+
+                            <h1><a href="single-page-left.html" class="post__title-link">Donec eu mollis augue, ut egestas leo</a></h1>
+                            <p class="post__date">29 October 2013 </p>
+
+                            <div class="wave-devider"></div>
+
+                            <p class="post__text">Mauris gravida ipsum vitae libero molestie eget dignissim ipsum egestas. Quisque in eros id velit molestie placerat a ut arcu. Etiam consequat, turpis ac commodo rhoncus, justo enim consequat tortor, vitae interdum odio tellus at sem. Aliquam lacus quam, lobortis sed lacus eget, commodo volutpat nunc. Text link sample. Proin accumsan diam vel nulla ultrices congue.</p> 
+
+                            <div class="tags">
+                                    <ul>
+                                        <li class="item-wrap"><a href="#" class="tags__item">news</a></li>
+                                        <li class="item-wrap"><a href="#" class="tags__item">movie</a></li>
+                                        <li class="item-wrap"><a href="#" class="tags__item">ceremony</a></li>
+                                        <li class="item-wrap"><a href="#" class="tags__item">award</a></li>
+                                    </ul>
+                            </div>
+
+                        </article>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/post-news.png">
+
+                    <p>Short asignment theme. Principal class "post". Class modificator "post--preview".</p>
+
+                    <pre class="brush: html">
+                        <div class="post post--preview">
+                            <div class="post__image">
+                                <img alt='' src="images/path/to/image">
+                                <div class="social social--position social--hide">
+                                    <span class="social__name">Share:</span>
+                                    <a href='#' class="social__variant social--first fa fa-facebook"></a>
+                                    <a href='#' class="social__variant social--second fa fa-twitter"></a>
+                                    <a href='#' class="social__variant social--third fa fa-vk"></a>
+                                </div>
+                            </div>
+                            <p class="post__date">22 October 2013 </p>
+                            <a href="#" class="post__title">Hollywood Film Awards 2013</a>
+                            <a href="#" class="btn read-more post--btn">read more</a>
+                        </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/post-preview.png">
+
+
+                    <h4>Movie</h4>
+                    <p>Movie code stucture. Full theme. Principal class "movie".</p>
+
+                    <pre class="brush: html">
+                        <div class="movie__info">
+                            <div class="col-sm-6 col-md-4 movie-mobile">
+                                <div class="movie__images">
+                                    <span class="movie__rating">5.0</span>
+                                    <img alt='' src="images/path/to/image">
+                                </div>
+                                <div class="movie__rate">Your vote: <div id='score' class="score"></div></div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-8">
+                                <p class="movie__time">169 min</p>
+
+                                <p class="movie__option"><strong>Country: </strong><a href="#">New Zeland</a>, <a href="#">USA</a></p>
+                                <p class="movie__option"><strong>Year: </strong><a href="#">2012</a></p>
+                                <p class="movie__option"><strong>Category: </strong><a href="#">Adventure</a>, <a href="#">Fantazy</a></p>
+                                <p class="movie__option"><strong>Release date: </strong>December 12, 2012</p>
+                                <p class="movie__option"><strong>Director: </strong><a href="#">Peter Jackson</a></p>
+                                <p class="movie__option"><strong>Actors: </strong><a href="#">Martin Freeman</a>, <a href="#">Ian McKellen</a>, <a href="#">Richard Armitage</a>, <a href="#">Ken Stott</a>, <a href="#">Graham McTavish</a>, <a href="#">Cate Blanchett</a>, <a href="#">Hugo Weaving</a>, <a href="#">Ian Holm</a>, <a href="#">Elijah Wood</a> <a href="#">...</a></p>
+                                <p class="movie__option"><strong>Age restriction: </strong><a href="#">13</a></p>
+                                <p class="movie__option"><strong>Box office: </strong><a href="#">$1 017 003 568</a></p>
+
+                                <a href="#" class="comment-link">Comments:  15</a>
+
+                                <div class="movie__btns">
+                                    <a href="#" class="btn btn-md btn--warning">book a ticket for this movie</a>
+                                    <a href="#" class="watchlist">Add to watchlist</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <p class="page-heading">The plot</p>
+
+                        <p class="movie__describe">Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths of guile and courage that surprise even him, he also gains possession of Gollum's "precious" ring that holds unexpected and useful qualities ... A simple, gold ring that is tied to the fate of all Middle-earth in ways Bilbo cannot begin to ... </p>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/movie.png">
+
+                    <p>Preview movie theme. Principal class "movie". Class modificator "movie--preview".</p>
+
+                    <pre class="brush: html">
+                        <div class="movie movie--preview release">
+                             <div class="col-sm-5 col-md-3">
+                                    <div class="movie__images">
+                                        <img alt='' src="images/path/to/image">
+                                    </div>
+                                    <div class="movie__feature">
+                                        <a href="#" class="movie__feature-item movie__feature--comment">123</a>
+                                        <a href="#" class="movie__feature-item movie__feature--video">7</a>
+                                        <a href="#" class="movie__feature-item movie__feature--photo">352</a>
+                                    </div>
+                            </div>
+
+                            <div class="col-sm-7 col-md-9">
+                                    <a href='movie-page-left.html' class="movie__title link--huge">Last Vegas (2013)</a>
+
+                                    <p class="movie__time">105 min</p>
+
+                                    <p class="movie__option"><strong>Country: </strong><a href="#">USA</a></p>
+                                    <p class="movie__option"><strong>Category: </strong><a href="#">Comady</a></p>
+                                    <p class="movie__option"><strong>Release date: </strong>November 1, 2013</p>
+                                    <p class="movie__option"><strong>Director: </strong><a href="#">Jon Turteltaub</a></p>
+                                    <p class="movie__option"><strong>Actors: </strong><a href="#">Robert De Niro</a>, <a href="#">Michael Douglas</a>, <a href="#">Morgan Freeman</a>, <a href="#">Kevin Kline</a>, <a href="#">Mary Steenburgen</a>, <a href="#">Jerry Ferrara</a>, <a href="#">Romany Malco</a> <a href="#">...</a></p>
+                                    <p class="movie__option"><strong>Age restriction: </strong><a href="#">13</a></p>
+
+                                    <div class="movie__btns">
+                                        <a href="#" class="btn btn-md btn--warning">book a ticket <span class="hidden-sm">for this movie</span></a>
+                                        <a href="#" class="watchlist">Add to watchlist</a>
+                                    </div>
+
+                                    <div class="preview-footer">
+                                        <div class="movie__rate"><div class="score"></div><span class="movie__rate-number">170 votes</span> <span class="movie__rating">5.0</span></div>
+                                        
+
+                                        <a href="#" class="movie__show-btn">Showtime</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/movie-preview.png">
+
+                    <p>Theme with timetable. Principal class "movie". Class modificator "movie--time".</p>
+
+                    <pre class="brush: html">
+                        <div class="movie movie--time">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5">
+                                    <div class="movie__images">
+                                        <span class="movie__rating">4.1</span>
+                                        <img alt='' src="images/path/to/image">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-7">
+                                    <a href='movie-page-left.html' class="movie__title">World War Z (2013) </a>
+
+                                    <p class="movie__time">116 min</p>
+
+                                    <p class="movie__option"><a href="#">Adventure</a> | <a href="#">Horror</a> | <a href="#">Action</a></p>
+                                </div>
+                                                        
+                                <div class="time-select">
+                                    <ul class="items-wrap">
+                                        <li class="time-select__item" data-time='09:40'>09:40</li>
+                                        <li class="time-select__item" data-time='13:45'>13:45</li>
+                                        <li class="time-select__item" data-time='15:45'>15:45</li>
+                                        <li class="time-select__item" data-time='19:50'>19:50</li>
+                                        <li class="time-select__item" data-time='21:50'>21:50</li>
+                                    </ul>
+                                </div>
+                                                    
+                            </div>
+                        </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/movie-time.png">
+
+                    <p>Theme for movie with backgound ("movie--test--light" - light grey bg, "movie--test--dark" - dark grey bg). Principal class "movie". Class modificator "".</p>
+
+                    <pre class="brush: html">
+                        <div class="movie movie--test movie--test--light movie--test--left">
+                                <div class="movie__images">
+                                    <a href="movie-page-left.html" class="movie-beta__link">
+                                    <img alt='' src="images/path/to/image">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-left.html' class="movie__title">The Hobbit: The Desolation of Smaug (2013)  </a>
+
+                                    <p class="movie__time">169 min</p>
+
+                                    <p class="movie__option"><a href="#">Adventure</a> | <a href="#">Fantasy</a> | <a href="#">Drama</a></p>
+                                    
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">5.0</span>
+                                    </div>               
+                                </div>
+                        </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/movie-test.png">
+
+                    <h4>Gallery item</h4>
+                    <p>Gallery item code stucture. Photo variant.</p>
+
+                    <pre class="brush: html">
+                        <div class="gallery-item">
+                            <a href='https://www.youtube.com/watch?v=Y5AehBA3IsE' class="gallery-item__image gallery-item--video">
+                                <img alt='' src="images/path/to/image">
+                            </a>
+                            <a href='https://www.youtube.com/watch?v=Y5AehBA3IsE' class="gallery-item__descript gallery-item--video-link">
+                                <span class="gallery-item__icon"><i class="fa fa-video-camera"></i></span>
+                                <p class="gallery-item__name">Camden Town Odeon</p>
+                            </a>
+                        </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/gal-photo.png">
+
+                    <p>Gallery item code stucture. Video variant.</p>
+
+                    <pre class="brush: html">
+                        <div class="gallery-item">
+                            <a href='https://www.youtube.com/watch?v=Y5AehBA3IsE' class="gallery-item__image gallery-item--video">
+                                <img alt='' src="images/path/to/image">
+                            </a>
+                            <a href='https://www.youtube.com/watch?v=Y5AehBA3IsE' class="gallery-item__descript gallery-item--video-link">
+                                <span class="gallery-item__icon"><i class="fa fa-video-camera"></i></span>
+                                <p class="gallery-item__name">Camden Town Odeon</p>
+                            </a>
+                        </div>
+                    </pre>
+                    <p>Result:</p>
+                    <img alt="" src="img/gal-video.png">
+
+
+
+                    <h2>FAQs</h2>
+
+                    <h4><strong>How to work with main menu?</strong></h4>
+                    <p>Main menu plugin initiates itself in file  <em>custom.js</em>. It contains following options:</p> 
+                        <ul>
+                            <li>triggerMenu – tracks element if the code which performs switch role for mobile menu view.</li>
+                            <li>subMenuTrigger – tracks elements serving for opening of dropdown menu in mobile view. (If your structure doesn’t provide dropdown  menu this option is not necessary) .</li>
+                            <li>AnimationSpeed – speed of hidden menu opening. </li>
+                        </ul>
+                    
+                    <hr>
+
+                    <h4><strong>How to use megamenu?</strong></h4>
+                    <p>Megamenu it’s a huge block which play role one of menu items. In this template it’s separate in 4 parts: each part for list represent. Each part contain nesting ul with list. They can be grouped and structured in different order. In general, it contains some important information and link to most useful pages. You can move this menu horizontaly. Just change value for "left" property in rules "ul#navigation > li > ul.mega-menu".
+                    <br>Megamenu fully responsive and you can use it for different dispay.</p>
+
+                    <hr>
+
+                    <h4><strong>How to change Google map location?</strong></h4>
+                    <ol>
+                        <li>Please, open page <em>custom.js</em></li>
+                        <li>Find <code>function initMap()</code> in code of this file.<br>
+                        Then find line of code
+                            <code>center: new google.maps.LatLng(40.717729,-74.006648),</code>
+                        </li>
+                        <li>You should change '40.717729,-74.006648' on your own. You can find appropriate value <a href="maps.google.com">here.</a></li>
+                        <li>You can add additional markers. You should init this part of code:
+                            <pre class="brush: html">
+                                var markerC = new google.maps.Marker({
+                                    map: map,
+                                    position: new google.maps.LatLng(51.512615, -0.130607)
+                                });
+                            </pre>
+                        </li>
+                        <li>There you should find field position: <code>position: new google.maps.LatLng(51.512615, -0.130607)</code></li>
+                        <li>You should change '51.512615, -0.130607' on your own. You can find appropriate value <a href="maps.google.com">here.</a> If you don’t need the second marker, just delete construction    
+                        <code>var markerB = new google.maps.Marker({
+                                    map: map,
+                                    position: new google.maps.LatLng(40.772898,-73.936878)
+                                });</code></li>
+                        <li>More details about google maps customization are <a href="https://developers.google.com/maps/documentation/javascript/tutorial">here</a></li>
+                    </ol>
+
+                    <h5>How to customize map marker pop infobox?</h5>
+                    <ol>
+                        <li>Creates the information to go in the pop-up info box.
+                            <pre class="brush: html">
+                                var boxTextB = document.createElement("div");
+                                boxTextB.innerHTML = '<span class="pop_up_box_text">Empire Cinemas, 5-6 Leicester Square, London</span>';
+                            </pre>
+                        </li>
+                        <li>Sets up the configuration options of the pop-up info box.
+                            <pre class="brush: html">
+                                var infoboxOptionsB = {
+                                     content: boxTextB
+                                     ,disableAutoPan: false
+                                     ,maxWidth: 0
+                                     ,pixelOffset: new google.maps.Size(30, -50)
+                                     ,zIndex: null
+                                     ,boxStyle: {
+                                     background: "#4c4145"
+                                     ,opacity: 1
+                                     ,width: "300px"
+                                     ,color: " #b4b1b2"
+                                     ,fontSize:"13px"
+                                     ,padding:'14px 20px 15px'
+                                     }
+                                     ,closeBoxMargin: "6px 2px 2px 2px"
+                                     ,infoBoxClearance: new google.maps.Size(1, 1)
+                                     ,closeBoxURL: "images/components/close.png"
+                                     ,isHidden: false
+                                     ,pane: "floatPane"
+                                     ,enableEventPropagation: false
+                                    };
+                            </pre>
+                        </li>
+                        <li>Creates the pop-up infobox for Glastonbury, adding the configuration options set above.
+                            <pre class="brush: html">
+                                infoboxB = new InfoBox(infoboxOptionsB);
+                            </pre>
+                        </li>
+                        <li>Add an 'event listener' to the Glastonbury map marker to listen out for when it is clicked.
+                            <pre class="brush: html">
+                                google.maps.event.addListener(markerB, "click", function (e) {
+                                 //Open the Glastonbury info box.
+                                 infoboxB.open(map, this);
+                                 //Sets the Glastonbury marker to be the center of the map.
+                                 map.setCenter(markerB.getPosition());
+                                });
+                            </pre>
+                        </li>
+                    </ol>
+
+                    <h4><strong>How to work with contact form?</strong></h4>
+                    <p>This template contains fully working contact form. All you need is to replace your actual e-mail address. Open the send.php files that are located in the root with any text editor and replace all instances of "YOUR_EMAIL_HERE" using the Find and Replace tool (usually the Ctrl+H hot key).</p>
+
+                    <hr>
+
+                    <h4 id="twitter"><strong>Twitter Feed</strong></h4>
+                    <p style="margin-bottom:0.5em;">There are two steps to setup the Twitter Widget.</p>
+
+                    <ol>
+                        <li>Setup an application at Twitter dev center and get keys.</li>
+                        <li>Put your keys into Twitter files.</li>
+                    </ol>
+                    <h5>Setup Twitter application</h5>
+                    <p>
+                        <img src="assets/images/twitter-settings.jpg" height="auto" width="100%" alt="">
+                    </p>
+                    <ol>
+                        <li>Visit <a href="https://dev.twitter.com/apps/">https://dev.twitter.com/apps/</a> and sign in using your Twitter username and password. This doesn't have to be the username or password of the stream you need access to, just a Twitter account you control.</li>
+                        <li>Select '<strong>Create new application</strong>' and enter the application details.
+                    
+                        <ol>
+                            <li>The name and description can be anything you like really, but you can't use 'Twitter' in the name.</li>
+                            <li>The website field can be your main website and doesn't have to be the site where your Twitter feed or feeds are located.</li>
+                            <li>Callback URL can be left blank</li>
+                        </ol>
+                        
+                        </li>
+                        <li>Enter the CAPTCHA info and click create</li>
+                        <li>On the next details screen, click '<strong>create my access token</strong>'. You may need to refresh the page after a few seconds if it doesn't appear automatically.</li>
+                        <li>Make a note of the <em>Consumer key</em>, <em>Consumer secret</em>, <em>Access token</em> and <em>Access token secret</em> as highlighted below.</li>
+                    </ol>
+                    <h5>Setup Twitter application</h5>
+                    <ol>
+                        <li>Open <strong>get-tweets.php</strong> file with help of your editor.</li>
+                        <li>Enter your twitter user name for <strong>$twitteruser = "";</strong></li>
+                        <li>Enter your consumer key for <strong>$consumerkey = "";</strong></li>
+                        <li>Enter your consumer secret key for <strong>$consumersecret = "";</strong></li>
+                        <li>Enter your access token for <strong>$accesstoken = "";</strong></li>
+                        <li>Enter your access token secret for <strong>$accesstokensecret = "";</strong></li>
+                        <li>Open <strong>js/jquery.twitter.js</strong> file with help of your editor.</li>
+                        <li>Enter your twitter profile name for <strong>$twitterprofile = "";</strong> (row 6)</li>
+                        <li>Enter your twitter screen name for <strong>$screenname = "";</strong> (row 7)</li>
+                        <li>Save your changes.</li>
+                    </ol>
+                    
+                    <p>This technology for twitter stream using php for last news. For correct work you need any kind of php server for debug website.</p>
+
+                    <hr>
+
+                    <h4><strong>How add facebook group like box to website</strong></h4>
+                    <ol>
+                        <li>Go to facebook social plugin documentation <a href="https://developers.facebook.com/docs/plugins">link</a>.</li>
+                        <li>In right sidebar chopse "Like box".</li>
+                        <li>Make your custom configuration. Preview window will show final result.</li>
+                        <li>Click on button "Get code".</li>
+                        <li>Choose tab "IFRAME" and copy code.</li>
+                        <li>Paste this code in appropriate place in html document.</li>
+                        <li>Save changes.</li>
+                    </ol>
+
+                    <hr>
+
+                    <h4 id="coming"><strong>Setting time on Coming soon page</strong></h4>
+                    <p>To set time on Coming soon page you need:</p>
+                    <ol>
+                        <li>Open <strong>coming-soon.html</strong>. At the bottom of the page call count down plugin.</li>
+                        <li>In counter init section set two value 
+                            <pre class="brush: html">
+                                dateOfBeginning = "Jan 17, 2014", //type your date of the Beginnig
+                                dateOfEnd = "Dec 25, 2014"; //type your date of the end
+                            </pre>
+                        </li>
+                        <li>Save your changes.</li>
+                    </ol>
+
+				</section>	
+
+
+				</div>
+
+				<div class="clearfix"></div>
+				<footer>
+					
+					
+		<span class="copyright">
+        <p>Once again, thank you so much for purchasing this theme. As we've said at the beginning, we'd be glad to help you if you have any questions relating to this theme. No guarantees, but we'll do our best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+        <br>
+		Designzway team with Love
+		</span>
+					<br />
+					
+				</footer>
+			</div>
+			
+			<br clear="both">
+		</div>
+
+	</div>
+    <!-- Bootstrap 3--> 
+    <!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script> --> 
+	
+    <script src="scripts/jquery.min.js"></script>
+	<script src="scripts/jquery-ui-1.9.1.custom.min.js"></script>
+	<script src="scripts/jquery.tocify.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+	<script>
+		$( function () {
+			var toc = $("#toc").tocify({
+				selectors: "h2,h3,h4,h5",
+				highlightOffset: 40,
+				scrollTo: 60,
+				showAndHide: true
+			}).data("toc-tocify");
+		} );
+	</script>
+
+	
+
+</body>
+</html>
